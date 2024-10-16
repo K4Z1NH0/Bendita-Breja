@@ -1,0 +1,139 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables */
+:root{
+    --yelow: #FFB701;
+    --white: #fff;
+    --gray: #1E1E1E;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--gray);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cardapio{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardapio .cardapio-title{
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: var(--yelow);
+}
+
+.cardapio .bendita-breja-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    color: var(--white);
+}
+
+.menu ul{
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--yelow);
+    padding: 2px 10px;
+    transition: .3s;
+}
+
+.menu ul li a:hover{
+    color: var(--white);
+}
+
+.shots-title, .drinks-title{
+    margin-top: 35px;
+    border-radius: 7px;
+    padding: 3px 3px;
+    background-color: var(--yelow);
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.shots-container, .drinks-container{
+    margin-top: 15px;
+}
+
+.card{
+    align-items: center;
+    width: 352px;
+    height: 95px;
+    border-radius: 7px;
+    padding: 12px 12px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.card-text .card-title{
+    font-size: 16px;
+}
+
+.card-text .card-description{
+    width: 225px;
+    font-size: 10px;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.card-text .card-price{
+    font-size: 24px;
+    color: var(--yelow);
+}
+
+.card-img img{
+    border-radius: 7px;
+    border: solid 2px var(--yelow);
+    width: 90px;
+    height: 90px;
+}
+
+/* Card com a imagem na esquerda */
+.card-reverse{
+    align-items: center;
+    width: 352px;
+    height: 95px;
+    border-radius: 7px;
+    padding: 12px 12px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-direction: row-reverse;
+}
+
+.card-reverse .card-price{
+    text-align: end;
+}
